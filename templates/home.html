@@ -1,0 +1,40 @@
+{%extends 'base.html'%}
+
+{%block head%} 
+
+{%endblock%}
+
+{%block body%}
+{%block content%}
+<div>
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Country,Other</th>
+      <th scope="col">Total Cases</th>
+      <th scope="col">New Cases</th>
+      <th scope="col">Total Deaths</th>
+      <th scope="col">New Deaths</th>
+      <th scope="col">Total Recovered</th>
+      <th scope="col">New Recovered</th>
+      <th scope="col">Active Cases</th>
+      <th scope="col">Serious, Critical </th>
+      <th scope="col">Tot Cases/1M pop</th>
+      <th scope="col">Death 1M pop</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    {%for key in country%}
+  </tr>
+     {%for val in country[key]%}
+    <td>{{val}}</td>
+     {%endfor%}
+    {%endfor%}  
+  </tbody>
+</div>
+{% endblock %}
+    
+
+{%endblock%}

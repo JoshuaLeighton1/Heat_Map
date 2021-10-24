@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{%block head%}
+<title>Covid Heatmap Generator App</title>
+{%endblock%}
+
+{%block body%}
+      {%block content%}
+        <form class= "box" method ="POST" action ="">
+            <h1>Login</h1>
+            {{form.hidden_tag() }}
+            {{ form.username }}
+            {{ form.password }}
+            {{ form.submit }}
+            <a href = "/signUp">Don't have an account? Sign Up</a>
+        </form>
+       {%endblock%}
+    
+    
+{%endblock%}
